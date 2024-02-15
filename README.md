@@ -1,4 +1,4 @@
-## A simple subdivision scheme
+# A Subdivision Scheme in igl
 
 ![](img/sqrt.png?raw=true)
 
@@ -8,7 +8,7 @@ to the original mesh (step 1), flipping the original edges to obtain a new
 set of faces (step 3). Step 2 involves shifting the original vertices and is
 not shown.
 
-For this task, you will implement the subdivision scheme described in
+Implementation of the subdivision scheme described in
 [Kobbelt00sqrt(3)-subdivision](https://www.graphics.rwth-aachen.de/media/papers/sqrt31.pdf) to
 iteratively create finer meshes from a given coarse mesh.
 According to the paper, given a mesh `(V, F)`, the √3-subdivision scheme creates a new mesh `(V', F')`
@@ -34,13 +34,4 @@ by applying the following rules:
 
 ![](img/subdivision.png?raw=true)
 
-Fill in the appropriate source code sections so that hitting the mesh is subdivided and displayed.
-
-*Relevant `igl` functions:* Many options possible.
-Some suggestions: `adjacency_list`, `triangle_triangle_adjacency`, `edge_topology`, `barycenter`.
-
-
-Required output of this section:
-
-* Screenshots of the subdivided meshes.
 
